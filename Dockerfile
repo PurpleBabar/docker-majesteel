@@ -5,5 +5,5 @@ RUN set -x \
 	&& apt-get install --no-install-recommends --no-install-suggests -y imagemagick
 # PHP extensions
 RUN set -ex \
-	&& pecl install imagick \
-	&& docker-php-ext-enable imagick
+	&& pecl install imagick-3.4.3 \
+    && docker-php-ext-enable imagick
